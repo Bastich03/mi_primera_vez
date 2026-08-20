@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diseño y visualización de información</title>
+
+        <style>
+            /* ESTO ES UN COMENTARIO. ABAJO ENCONTRARÁ MÁS COMENTARIOS */
+
+            /*  RESET: Los navegadores traen márgenes y rellenos por defecto que cambian según el elemento. Los ponemos todos en cero para empezar desde una base pareja y controlar nosotros los espacios. "box-sizing: border-box" hace que el padding y el borde se cuenten DENTRO del ancho que definimos (así los cálculos son más simples). */
+
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+            /* VARIABLES DE COLOR: Es posible guardar valores, tales como los colores, un solo lugar, así cualquier ajuste posterior sólo se repite una vez y no en tantas reglas como sea usado. */
+
+            :root {
+              --rojo: #cbed6fcc;
+              --gris-oscuro: #dddddd;
+              --gris-medio: #DDDDDD;
+              --gris-claro: #b0b0b0;
+              --borde: #b3b3b3;
+              --background: #abbcdc;
+            }
+
+            /* LO DEMÁS */
+
+            body {
+              font-family: Helvetica, Arial, serif;
+              margin: 0;
+              color: var(--gris-oscuro);
+              background-color: #171B23;
+            }
+
+            .contenedor {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 0 3rem;
+            }
+
+
+            nav {
+              padding: 1.25rem 0;
+              font-size: calc(0.65rem + 0.1vw);
+              letter-spacing: 0.075rem;
+              text-transform: uppercase;
+              box-shadow: 0 0 3px var(--borde);
+            }
+
+            nav > div.contenedor {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            div.nombre-curso {
+              color: var(--gris-medio);
+            }
+
+            div.nombre-evaluacion {
+              color: var(--gris-claro);
+            }
+
+
+            header {
+              text-align: center;
+              padding: 2rem 1rem;
+            }
+
+            h1 {
+              margin-top: 2rem;
+              font-family: 'Myriad Pro
+                ';
+              font-size: 5rem;
+              line-height: 1.2;
+              color: #89DFC4;
+              letter-spacing: 0.10em;
+            }
+
+            h2 {
+              font-size: 2rem;
+              color: var(--rojo);
+              margin-bottom: 1rem;
+              font-weight: 200;
+            }
+
+
+            h3 {
+              font-family: Arial, sans-serif;
+              font-size: 0.9rem;
+              color: var(--gris-medio);
+              margin-bottom: 20px;w
+            }
+
+            h3 a {
+              color: var(--gris-oscuro);
+            }
+.contenedor-video {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.contenedor-video iframe,
+.contenedor-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+}
+
+            article {
+              padding-bottom: 3rem;
+            }
+
+
+            p {
+              font-size: 1rem;
+              line-height: 1.6;
+              margin-bottom: 1rem;
+            }
+
+            p > em{
+              font-style: normal;
+              font-weight: 600;
+              color: #cbed6fcc;
+            }
+
+            figure {
+              margin: 2rem -2rem;
+            }
+
+            figure img {
+              width: 70%;
+              max-width: 500px;
+              display: block;
+              border: 1px solid var(--borde);
+              margin: 0 auto;
+            }
+
+            figcaption {
+              font-family: Arial, sans-serif;
+              font-size: 0.8rem;
+              color: var(--gris-claro);
+              text-align: center;
+              margin-top: 0.2rem;
+            }
+
+            footer {
+              box-shadow: 0 0 3px var(--borde);
+              padding: 1.25rem 0;
+              text-align: center;
+              font-family: Arial, sans-serif;
+              font-size: calc(0.65rem + 0.1vw);
+              letter-spacing: 0.075rem;
+              color: var(--rojo);
+            }
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap">
+    </head>
+    <body>
+        <nav class="masthead">
+            <div class="contenido contenedor">
+                <span class="nombre-curso">Diseño y Visualización de Información</span>
+                <span class="nombre-evaluacion">Evaluación diagnóstica</span>
+            </div>
+          
+        </nav>
+
+        <main class="contenedor">
+            <header>
+                <h1 style="font-size: 3rem;">SELFIECITY</h1>
+                <h2 style="font-size: 1.5rem; font-family: 'Manrope', sans-serif;">El análisis de las personas a través del lente de la selfie.</h2>
+                <h3 style="font-family: Arial;">Por <a href="#https://github.com/aylineoff">Ayline Marín</a>, <a href="#https://github.com/catsgugu">Giulia Pepe</a>, <a href="#https://github.com/Bastich03">Esteban Petric</a> y <a href="#https://github.com/shootingstarcony">Constanza Venegas</a></h3>
+            </header>
+<div class="contenedor-video">
+  
+        <video controls>
+            <source src="https://raw.githubusercontent.com/shootingstarcony/m4v/main/nycmp.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+            <article>
+                <p>
+                    <em>Contexto de la pieza:&nbsp;</em><b>Selfiecity </b>es un proyecto de investigación y visualización de datos desarrollado en 2014 por Lev Manovich y un equipo interdisciplinario. Surge en un contexto donde Instagram y las redes sociales estaban convirtiendo la selfie en un fenómeno cultural masivo.</p>
+              <p>El proyecto analizó fotografías de cinco ciudades: Bangkok, Berlín, Moscú, Nueva York y São Paulo, buscando identificar diferencias culturales en la manera en que las personas se representan a sí mismas mediante las selfies.</p>
+                <figure>
+                  
+                    <img src="https://raw.githubusercontent.com/aylineoff/troncal_fc_medios/main/data-collection.webp" alt="Selfiecity recopiló y filtró datos para estudiar selfies en cinco ciudades: Nueva York, São Paulo, Berlín, Bangkok y Moscú. El proceso comenzó seleccionando entre 20.000 y 30.000 fotos de Instagram por cada ubicación geográfica. Este software analizó características visuales específicas en los rostros, tales como la edad, el género, el estado de ánimo, la inclinación de la cabeza, la posición de los ojos y el uso de gafas." />
+                    <figcaption>Fuente: Manovich, L. et al. (2014). Selfiecity: Dataset. Recuperado de https://selfiecity.net/#dataset</figcaption>
+                </figure>
+              <p>Para esto se recopilaron cientos de miles de fotografías y se seleccionaron 3.200 selfies para un análisis más detallado, considerando variables como edad, género, expresión facial, postura y dirección de la mirada.</p>
+              
+
+                <p>
+                    <em>Función de la pieza:</em>&nbsp;La función principal de Selfiecity es transformar fotografías en información que pueda ser comparada y analizada. A través de sus visualizaciones, permite identificar patrones en la forma en que las personas se fotografían.</p>
+              <p>Uno de sus principales recursos son los Imageplots, que organizan cientos de fotografías según diferentes características. Esto permite detectar visualmente diferencias y similitudes que serían difíciles de encontrar observando cada selfie por separado.</p>
+                <p>Además, su plataforma interactiva permite explorar y filtrar los datos, haciendo que el usuario participe directamente en el descubrimiento de patrones. Así, la visualización no solo presenta resultados, sino que también funciona como una herramienta de investigación.</p>
+              
+                <figure>
+                  <img src="https://raw.githubusercontent.com/aylineoff/troncal_fc_medios/main/imagen1.webp" alt="En estas cuadrículas, se organizan las fotos horizontalmente según la inclinación de la cabeza; el eje vertical indica si las personas miran hacia arriba o hacia abajo." .>
+                  <figcaption>Fuente: Manovich, L. et al. (2014). Selfiecity: Intro. Recuperado de https://selfiecity.net/#intro</figcaption>
+                </figure>
+              <p>
+                    <em>Legado:&nbsp;</em> Uno de los principales aportes de Selfiecity es demostrar que una imagen también puede funcionar como un dato. Las fotografías dejan de ser solamente representaciones personales y pueden utilizarse para estudiar comportamientos y fenómenos culturales.
+                </p>
+              <p>También propone una forma diferente de visualizar información: en vez de representar los datos únicamente mediante gráficos tradicionales, utiliza las propias fotografías como elementos de la visualización, combinando análisis cuantitativo con información visual.</p>
+              <figure>
+                  <img src="https://raw.githubusercontent.com/aylineoff/troncal_fc_medios/main/imagen2.webp" alt="El panel está dividido en dos secciones principales. La parte superior es el área de filtros interactivos, organizados en cuatro categorías clave: Demografía, Pose, Caras y Estado de ánimo. La parte inferior es una cuadrícula de fotos dinámica que muestra los resultados de los filtros seleccionados." .>
+                <figcaption>Fuente: Manovich, L. et al. (2014). Selfiecity: Selfiexploratory. Recuperado de https://selfiecity.net/#selfiexploratory</figcaption>
+                </figure>
+              <p>Finalmente, Selfiecity dejó como aporte una nueva forma de entender la selfie, relacionándola con temas como identidad, género, cultura y comportamiento social, y demostrando cómo el diseño puede utilizarse para explorar grandes cantidades de información.</p>
+            <figure>
+                  <img src="https://raw.githubusercontent.com/aylineoff/troncal_fc_medios/main/imagen3.webp" alt="Gráfico que compara la edad promedio de hombres y mujeres que aparecen en selfies de cinco ciudades.También mide cuánto sonríen en las fotografías. Bangkok destaca por tener las sonrisas más frecuentes" .>
+              <img src="https://raw.githubusercontent.com/aylineoff/troncal_fc_medios/main/imagen4.webp" alt="Gráfico que analiza qué porcentaje de las fotografías estudiadas corresponde realmente a selfies. Indican que solo entre un 3 % y 5 % de las imágenes son selfies. También muestra que las mujeres aparecen en mayor proporción." .>
+              
+                </figure>
+          </article>
+        </main>
+
+        <footer>Viernes 21 de agosto, 2026</footer>
+    </body>
+</html>
